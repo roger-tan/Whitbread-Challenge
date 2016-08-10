@@ -38,5 +38,6 @@ You are almost ready to run the project. To run the project, please click on **R
 - Then, I decided to use a tableView to display the result
 - When the result is displayed, I started to implement the CLLocationManager to get the current location of the user.
 - After that, when I was sure that the location update works, I started to change the parameter of the provider to get venues with the location of users.
+- And Voilà
 
 
