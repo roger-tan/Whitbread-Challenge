@@ -18,6 +18,15 @@ class VenueViewModel {
         }
     }
     
+    var distanceText: String {
+        get {
+            if let distance = venue.location?.distance {
+                return "\(distance) m"
+            }
+            return "0m"
+        }
+    }
+    
     init(venue: Venues) {
         self.venue = venue
     }
