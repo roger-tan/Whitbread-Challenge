@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86C8A761406EF0C9D8F294F2 /* Pods_Whitbread_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C1704A6681BDABEF1332E5 /* Pods_Whitbread_ChallengeTests.framework */; };
 		9506CA411D5B675B00738119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506CA401D5B675B00738119 /* AppDelegate.swift */; };
-		9506CA431D5B675B00738119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506CA421D5B675B00738119 /* ViewController.swift */; };
 		9506CA461D5B675B00738119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9506CA441D5B675B00738119 /* Main.storyboard */; };
 		9506CA481D5B675B00738119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9506CA471D5B675B00738119 /* Assets.xcassets */; };
 		9506CA4B1D5B675B00738119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9506CA491D5B675B00738119 /* LaunchScreen.storyboard */; };
@@ -35,6 +35,13 @@
 		95709F2E1D5B6BD700BEE1A5 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F191D5B6BD700BEE1A5 /* Stats.swift */; };
 		95709F2F1D5B6BD700BEE1A5 /* VenueChains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F1A1D5B6BD700BEE1A5 /* VenueChains.swift */; };
 		95709F301D5B6BD700BEE1A5 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F1B1D5B6BD700BEE1A5 /* Venues.swift */; };
+		9588C28E1D5B6E290002F3DE /* FoursquareProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588C28D1D5B6E290002F3DE /* FoursquareProvider.swift */; };
+		95A4A62E1D5B89D4002EE0A0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4A62D1D5B89D4002EE0A0 /* SearchViewModel.swift */; };
+		95CA118B1D5B7CD4005D9015 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA118A1D5B7CD4005D9015 /* SearchViewController.swift */; };
+		95CA118E1D5B8055005D9015 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA118D1D5B8055005D9015 /* VenueViewModel.swift */; };
+		95CA11921D5B87BD005D9015 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA11911D5B87BD005D9015 /* VenueCell.swift */; };
+		C87FED7B0648380E0412C88E /* Pods_Whitbread_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF187BDC90FFA0D826B2BA2 /* Pods_Whitbread_Challenge.framework */; };
+		CCEE5418BD12E949824712C0 /* Pods_Whitbread_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00090F2FD9B93E71EB7EF97 /* Pods_Whitbread_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049B8CEEEB853562FD16B127 /* Pods-Whitbread-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitbread-ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whitbread-ChallengeTests/Pods-Whitbread-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		137030AA24F262C8CE472CA9 /* Pods-Whitbread-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitbread-ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whitbread-ChallengeUITests/Pods-Whitbread-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		408CC09620490E3E22548389 /* Pods-Whitbread-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitbread-ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whitbread-ChallengeUITests/Pods-Whitbread-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72C1704A6681BDABEF1332E5 /* Pods_Whitbread_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whitbread_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A93814EFEB13E59212286CB /* Pods-Whitbread-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitbread-ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whitbread-ChallengeTests/Pods-Whitbread-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		9506CA3D1D5B675B00738119 /* Whitbread-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whitbread-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9506CA401D5B675B00738119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9506CA421D5B675B00738119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9506CA451D5B675B00738119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9506CA471D5B675B00738119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9506CA4A1D5B675B00738119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +100,15 @@
 		95709F191D5B6BD700BEE1A5 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stats.swift; path = Models/Stats.swift; sourceTree = "<group>"; };
 		95709F1A1D5B6BD700BEE1A5 /* VenueChains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueChains.swift; path = Models/VenueChains.swift; sourceTree = "<group>"; };
 		95709F1B1D5B6BD700BEE1A5 /* Venues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venues.swift; path = Models/Venues.swift; sourceTree = "<group>"; };
+		9588C28D1D5B6E290002F3DE /* FoursquareProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoursquareProvider.swift; path = Providers/FoursquareProvider.swift; sourceTree = "<group>"; };
+		95A4A62D1D5B89D4002EE0A0 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = ViewModels/SearchViewModel.swift; sourceTree = "<group>"; };
+		95CA118A1D5B7CD4005D9015 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ViewControllers/SearchViewController.swift; sourceTree = "<group>"; };
+		95CA118D1D5B8055005D9015 /* VenueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueViewModel.swift; path = ViewModels/VenueViewModel.swift; sourceTree = "<group>"; };
+		95CA11911D5B87BD005D9015 /* VenueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueCell.swift; path = Views/Cells/VenueCell.swift; sourceTree = "<group>"; };
+		BD74AFB4B8D9A0778A752413 /* Pods-Whitbread-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitbread-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whitbread-Challenge/Pods-Whitbread-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FB818C0A5992A8B10B11FC /* Pods-Whitbread-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitbread-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whitbread-Challenge/Pods-Whitbread-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		E00090F2FD9B93E71EB7EF97 /* Pods_Whitbread_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whitbread_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF187BDC90FFA0D826B2BA2 /* Pods_Whitbread_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whitbread_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87FED7B0648380E0412C88E /* Pods_Whitbread_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C8A761406EF0C9D8F294F2 /* Pods_Whitbread_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +132,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEE5418BD12E949824712C0 /* Pods_Whitbread_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B710E05B740A44378E98B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD74AFB4B8D9A0778A752413 /* Pods-Whitbread-Challenge.debug.xcconfig */,
+				D6FB818C0A5992A8B10B11FC /* Pods-Whitbread-Challenge.release.xcconfig */,
+				049B8CEEEB853562FD16B127 /* Pods-Whitbread-ChallengeTests.debug.xcconfig */,
+				8A93814EFEB13E59212286CB /* Pods-Whitbread-ChallengeTests.release.xcconfig */,
+				408CC09620490E3E22548389 /* Pods-Whitbread-ChallengeUITests.debug.xcconfig */,
+				137030AA24F262C8CE472CA9 /* Pods-Whitbread-ChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9506CA341D5B675B00738119 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +159,8 @@
 				9506CA541D5B675B00738119 /* Whitbread-ChallengeTests */,
 				9506CA5F1D5B675B00738119 /* Whitbread-ChallengeUITests */,
 				9506CA3E1D5B675B00738119 /* Products */,
+				33B710E05B740A44378E98B4 /* Pods */,
+				AB71D5B700F6FA981A0C45CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,8 +178,11 @@
 			isa = PBXGroup;
 			children = (
 				95709F061D5B6BC900BEE1A5 /* Models */,
+				9588C28C1D5B6E120002F3DE /* Providers */,
+				95CA118F1D5B878E005D9015 /* Views */,
+				95CA118C1D5B8027005D9015 /* ViewModels */,
+				95CA11891D5B7CA3005D9015 /* ViewControllers */,
 				9506CA401D5B675B00738119 /* AppDelegate.swift */,
-				9506CA421D5B675B00738119 /* ViewController.swift */,
 				9506CA441D5B675B00738119 /* Main.storyboard */,
 				9506CA471D5B675B00738119 /* Assets.xcassets */,
 				9506CA491D5B675B00738119 /* LaunchScreen.storyboard */,
@@ -196,6 +237,57 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		9588C28C1D5B6E120002F3DE /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				9588C28D1D5B6E290002F3DE /* FoursquareProvider.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		95CA11891D5B7CA3005D9015 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95CA118A1D5B7CD4005D9015 /* SearchViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95CA118C1D5B8027005D9015 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				95CA118D1D5B8055005D9015 /* VenueViewModel.swift */,
+				95A4A62D1D5B89D4002EE0A0 /* SearchViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		95CA118F1D5B878E005D9015 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95CA11901D5B87A0005D9015 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		95CA11901D5B87A0005D9015 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95CA11911D5B87BD005D9015 /* VenueCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		AB71D5B700F6FA981A0C45CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDF187BDC90FFA0D826B2BA2 /* Pods_Whitbread_Challenge.framework */,
+				72C1704A6681BDABEF1332E5 /* Pods_Whitbread_ChallengeTests.framework */,
+				E00090F2FD9B93E71EB7EF97 /* Pods_Whitbread_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9506CA651D5B675B00738119 /* Build configuration list for PBXNativeTarget "Whitbread-Challenge" */;
 			buildPhases = (
+				97AEEFF18B01A0C8C1DBA7DD /* [CP] Check Pods Manifest.lock */,
 				9506CA391D5B675B00738119 /* Sources */,
 				9506CA3A1D5B675B00738119 /* Frameworks */,
 				9506CA3B1D5B675B00738119 /* Resources */,
+				1DBBCF808B35CC8E6249B185 /* [CP] Embed Pods Frameworks */,
+				2D16BA868C376754C0FB7216 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,9 +315,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9506CA681D5B675B00738119 /* Build configuration list for PBXNativeTarget "Whitbread-ChallengeTests" */;
 			buildPhases = (
+				10EF723A6ED2DB1F16DDF1C7 /* [CP] Check Pods Manifest.lock */,
 				9506CA4D1D5B675B00738119 /* Sources */,
 				9506CA4E1D5B675B00738119 /* Frameworks */,
 				9506CA4F1D5B675B00738119 /* Resources */,
+				44BA8BC0F1D2E20BE29676E3 /* [CP] Embed Pods Frameworks */,
+				30D657979420A537DC629012 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9506CA6B1D5B675B00738119 /* Build configuration list for PBXNativeTarget "Whitbread-ChallengeUITests" */;
 			buildPhases = (
+				BF6E0729FDBF4044087D1C5E /* [CP] Check Pods Manifest.lock */,
 				9506CA581D5B675B00738119 /* Sources */,
 				9506CA591D5B675B00738119 /* Frameworks */,
 				9506CA5A1D5B675B00738119 /* Resources */,
+				1C79FDC0B0D03C3D77732564 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +422,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10EF723A6ED2DB1F16DDF1C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1C79FDC0B0D03C3D77732564 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whitbread-ChallengeUITests/Pods-Whitbread-ChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DBBCF808B35CC8E6249B185 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whitbread-Challenge/Pods-Whitbread-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D16BA868C376754C0FB7216 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whitbread-Challenge/Pods-Whitbread-Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30D657979420A537DC629012 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whitbread-ChallengeTests/Pods-Whitbread-ChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44BA8BC0F1D2E20BE29676E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whitbread-ChallengeTests/Pods-Whitbread-ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97AEEFF18B01A0C8C1DBA7DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF6E0729FDBF4044087D1C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9506CA391D5B675B00738119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -330,24 +553,28 @@
 				95709F231D5B6BD700BEE1A5 /* Item.swift in Sources */,
 				95709F2D1D5B6BD700BEE1A5 /* Specials.swift in Sources */,
 				95709F251D5B6BD700BEE1A5 /* LabeledLatLngs.swift in Sources */,
+				95CA11921D5B87BD005D9015 /* VenueCell.swift in Sources */,
 				95709F2A1D5B6BD700BEE1A5 /* Provider.swift in Sources */,
 				95709F271D5B6BD700BEE1A5 /* Menu.swift in Sources */,
 				95709F301D5B6BD700BEE1A5 /* Venues.swift in Sources */,
 				95709F2B1D5B6BD700BEE1A5 /* Response.swift in Sources */,
 				95709F211D5B6BD700BEE1A5 /* HereNow.swift in Sources */,
 				95709F1D1D5B6BD700BEE1A5 /* Contact.swift in Sources */,
-				9506CA431D5B675B00738119 /* ViewController.swift in Sources */,
 				95709F2F1D5B6BD700BEE1A5 /* VenueChains.swift in Sources */,
 				95709F221D5B6BD700BEE1A5 /* Icon.swift in Sources */,
 				95709F2E1D5B6BD700BEE1A5 /* Stats.swift in Sources */,
 				95709F261D5B6BD700BEE1A5 /* Location.swift in Sources */,
+				95CA118E1D5B8055005D9015 /* VenueViewModel.swift in Sources */,
 				95709F291D5B6BD700BEE1A5 /* Notifications.swift in Sources */,
+				95CA118B1D5B7CD4005D9015 /* SearchViewController.swift in Sources */,
 				95709F281D5B6BD700BEE1A5 /* Meta.swift in Sources */,
 				95709F2C1D5B6BD700BEE1A5 /* Search.swift in Sources */,
 				95709F241D5B6BD700BEE1A5 /* Items.swift in Sources */,
 				9506CA411D5B675B00738119 /* AppDelegate.swift in Sources */,
+				9588C28E1D5B6E290002F3DE /* FoursquareProvider.swift in Sources */,
 				95709F1F1D5B6BD700BEE1A5 /* FormattedAddress.swift in Sources */,
 				95709F1C1D5B6BD700BEE1A5 /* Categories.swift in Sources */,
+				95A4A62E1D5B89D4002EE0A0 /* SearchViewModel.swift in Sources */,
 				95709F1E1D5B6BD700BEE1A5 /* Delivery.swift in Sources */,
 				95709F201D5B6BD700BEE1A5 /* Groups.swift in Sources */,
 			);
@@ -491,6 +718,7 @@
 		};
 		9506CA661D5B675B00738119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD74AFB4B8D9A0778A752413 /* Pods-Whitbread-Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Whitbread-Challenge/Info.plist";
@@ -502,6 +730,7 @@
 		};
 		9506CA671D5B675B00738119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FB818C0A5992A8B10B11FC /* Pods-Whitbread-Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Whitbread-Challenge/Info.plist";
@@ -513,6 +742,7 @@
 		};
 		9506CA691D5B675B00738119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049B8CEEEB853562FD16B127 /* Pods-Whitbread-ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Whitbread-ChallengeTests/Info.plist";
@@ -525,6 +755,7 @@
 		};
 		9506CA6A1D5B675B00738119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A93814EFEB13E59212286CB /* Pods-Whitbread-ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Whitbread-ChallengeTests/Info.plist";
@@ -537,6 +768,7 @@
 		};
 		9506CA6C1D5B675B00738119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408CC09620490E3E22548389 /* Pods-Whitbread-ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Whitbread-ChallengeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -548,6 +780,7 @@
 		};
 		9506CA6D1D5B675B00738119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137030AA24F262C8CE472CA9 /* Pods-Whitbread-ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Whitbread-ChallengeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
