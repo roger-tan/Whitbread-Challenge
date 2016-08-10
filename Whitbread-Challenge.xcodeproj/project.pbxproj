@@ -14,6 +14,27 @@
 		9506CA4B1D5B675B00738119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9506CA491D5B675B00738119 /* LaunchScreen.storyboard */; };
 		9506CA561D5B675B00738119 /* Whitbread_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506CA551D5B675B00738119 /* Whitbread_ChallengeTests.swift */; };
 		9506CA611D5B675B00738119 /* Whitbread_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506CA601D5B675B00738119 /* Whitbread_ChallengeUITests.swift */; };
+		95709F1C1D5B6BD700BEE1A5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F071D5B6BD700BEE1A5 /* Categories.swift */; };
+		95709F1D1D5B6BD700BEE1A5 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F081D5B6BD700BEE1A5 /* Contact.swift */; };
+		95709F1E1D5B6BD700BEE1A5 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F091D5B6BD700BEE1A5 /* Delivery.swift */; };
+		95709F1F1D5B6BD700BEE1A5 /* FormattedAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F0A1D5B6BD700BEE1A5 /* FormattedAddress.swift */; };
+		95709F201D5B6BD700BEE1A5 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F0B1D5B6BD700BEE1A5 /* Groups.swift */; };
+		95709F211D5B6BD700BEE1A5 /* HereNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F0C1D5B6BD700BEE1A5 /* HereNow.swift */; };
+		95709F221D5B6BD700BEE1A5 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F0D1D5B6BD700BEE1A5 /* Icon.swift */; };
+		95709F231D5B6BD700BEE1A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F0E1D5B6BD700BEE1A5 /* Item.swift */; };
+		95709F241D5B6BD700BEE1A5 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F0F1D5B6BD700BEE1A5 /* Items.swift */; };
+		95709F251D5B6BD700BEE1A5 /* LabeledLatLngs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F101D5B6BD700BEE1A5 /* LabeledLatLngs.swift */; };
+		95709F261D5B6BD700BEE1A5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F111D5B6BD700BEE1A5 /* Location.swift */; };
+		95709F271D5B6BD700BEE1A5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F121D5B6BD700BEE1A5 /* Menu.swift */; };
+		95709F281D5B6BD700BEE1A5 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F131D5B6BD700BEE1A5 /* Meta.swift */; };
+		95709F291D5B6BD700BEE1A5 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F141D5B6BD700BEE1A5 /* Notifications.swift */; };
+		95709F2A1D5B6BD700BEE1A5 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F151D5B6BD700BEE1A5 /* Provider.swift */; };
+		95709F2B1D5B6BD700BEE1A5 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F161D5B6BD700BEE1A5 /* Response.swift */; };
+		95709F2C1D5B6BD700BEE1A5 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F171D5B6BD700BEE1A5 /* Search.swift */; };
+		95709F2D1D5B6BD700BEE1A5 /* Specials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F181D5B6BD700BEE1A5 /* Specials.swift */; };
+		95709F2E1D5B6BD700BEE1A5 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F191D5B6BD700BEE1A5 /* Stats.swift */; };
+		95709F2F1D5B6BD700BEE1A5 /* VenueChains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F1A1D5B6BD700BEE1A5 /* VenueChains.swift */; };
+		95709F301D5B6BD700BEE1A5 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95709F1B1D5B6BD700BEE1A5 /* Venues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +68,27 @@
 		9506CA5C1D5B675B00738119 /* Whitbread-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whitbread-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9506CA601D5B675B00738119 /* Whitbread_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whitbread_ChallengeUITests.swift; sourceTree = "<group>"; };
 		9506CA621D5B675B00738119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95709F071D5B6BD700BEE1A5 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = Models/Categories.swift; sourceTree = "<group>"; };
+		95709F081D5B6BD700BEE1A5 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Models/Contact.swift; sourceTree = "<group>"; };
+		95709F091D5B6BD700BEE1A5 /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Delivery.swift; path = Models/Delivery.swift; sourceTree = "<group>"; };
+		95709F0A1D5B6BD700BEE1A5 /* FormattedAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormattedAddress.swift; path = Models/FormattedAddress.swift; sourceTree = "<group>"; };
+		95709F0B1D5B6BD700BEE1A5 /* Groups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Groups.swift; path = Models/Groups.swift; sourceTree = "<group>"; };
+		95709F0C1D5B6BD700BEE1A5 /* HereNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HereNow.swift; path = Models/HereNow.swift; sourceTree = "<group>"; };
+		95709F0D1D5B6BD700BEE1A5 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Models/Icon.swift; sourceTree = "<group>"; };
+		95709F0E1D5B6BD700BEE1A5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Models/Item.swift; sourceTree = "<group>"; };
+		95709F0F1D5B6BD700BEE1A5 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Items.swift; path = Models/Items.swift; sourceTree = "<group>"; };
+		95709F101D5B6BD700BEE1A5 /* LabeledLatLngs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabeledLatLngs.swift; path = Models/LabeledLatLngs.swift; sourceTree = "<group>"; };
+		95709F111D5B6BD700BEE1A5 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Models/Location.swift; sourceTree = "<group>"; };
+		95709F121D5B6BD700BEE1A5 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = Models/Menu.swift; sourceTree = "<group>"; };
+		95709F131D5B6BD700BEE1A5 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meta.swift; path = Models/Meta.swift; sourceTree = "<group>"; };
+		95709F141D5B6BD700BEE1A5 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Models/Notifications.swift; sourceTree = "<group>"; };
+		95709F151D5B6BD700BEE1A5 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Models/Provider.swift; sourceTree = "<group>"; };
+		95709F161D5B6BD700BEE1A5 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Models/Response.swift; sourceTree = "<group>"; };
+		95709F171D5B6BD700BEE1A5 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Search.swift; path = Models/Search.swift; sourceTree = "<group>"; };
+		95709F181D5B6BD700BEE1A5 /* Specials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Specials.swift; path = Models/Specials.swift; sourceTree = "<group>"; };
+		95709F191D5B6BD700BEE1A5 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stats.swift; path = Models/Stats.swift; sourceTree = "<group>"; };
+		95709F1A1D5B6BD700BEE1A5 /* VenueChains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueChains.swift; path = Models/VenueChains.swift; sourceTree = "<group>"; };
+		95709F1B1D5B6BD700BEE1A5 /* Venues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venues.swift; path = Models/Venues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +139,7 @@
 		9506CA3F1D5B675B00738119 /* Whitbread-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				95709F061D5B6BC900BEE1A5 /* Models */,
 				9506CA401D5B675B00738119 /* AppDelegate.swift */,
 				9506CA421D5B675B00738119 /* ViewController.swift */,
 				9506CA441D5B675B00738119 /* Main.storyboard */,
@@ -123,6 +166,34 @@
 				9506CA621D5B675B00738119 /* Info.plist */,
 			);
 			path = "Whitbread-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		95709F061D5B6BC900BEE1A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95709F071D5B6BD700BEE1A5 /* Categories.swift */,
+				95709F081D5B6BD700BEE1A5 /* Contact.swift */,
+				95709F091D5B6BD700BEE1A5 /* Delivery.swift */,
+				95709F0A1D5B6BD700BEE1A5 /* FormattedAddress.swift */,
+				95709F0B1D5B6BD700BEE1A5 /* Groups.swift */,
+				95709F0C1D5B6BD700BEE1A5 /* HereNow.swift */,
+				95709F0D1D5B6BD700BEE1A5 /* Icon.swift */,
+				95709F0E1D5B6BD700BEE1A5 /* Item.swift */,
+				95709F0F1D5B6BD700BEE1A5 /* Items.swift */,
+				95709F101D5B6BD700BEE1A5 /* LabeledLatLngs.swift */,
+				95709F111D5B6BD700BEE1A5 /* Location.swift */,
+				95709F121D5B6BD700BEE1A5 /* Menu.swift */,
+				95709F131D5B6BD700BEE1A5 /* Meta.swift */,
+				95709F141D5B6BD700BEE1A5 /* Notifications.swift */,
+				95709F151D5B6BD700BEE1A5 /* Provider.swift */,
+				95709F161D5B6BD700BEE1A5 /* Response.swift */,
+				95709F171D5B6BD700BEE1A5 /* Search.swift */,
+				95709F181D5B6BD700BEE1A5 /* Specials.swift */,
+				95709F191D5B6BD700BEE1A5 /* Stats.swift */,
+				95709F1A1D5B6BD700BEE1A5 /* VenueChains.swift */,
+				95709F1B1D5B6BD700BEE1A5 /* Venues.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +327,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95709F231D5B6BD700BEE1A5 /* Item.swift in Sources */,
+				95709F2D1D5B6BD700BEE1A5 /* Specials.swift in Sources */,
+				95709F251D5B6BD700BEE1A5 /* LabeledLatLngs.swift in Sources */,
+				95709F2A1D5B6BD700BEE1A5 /* Provider.swift in Sources */,
+				95709F271D5B6BD700BEE1A5 /* Menu.swift in Sources */,
+				95709F301D5B6BD700BEE1A5 /* Venues.swift in Sources */,
+				95709F2B1D5B6BD700BEE1A5 /* Response.swift in Sources */,
+				95709F211D5B6BD700BEE1A5 /* HereNow.swift in Sources */,
+				95709F1D1D5B6BD700BEE1A5 /* Contact.swift in Sources */,
 				9506CA431D5B675B00738119 /* ViewController.swift in Sources */,
+				95709F2F1D5B6BD700BEE1A5 /* VenueChains.swift in Sources */,
+				95709F221D5B6BD700BEE1A5 /* Icon.swift in Sources */,
+				95709F2E1D5B6BD700BEE1A5 /* Stats.swift in Sources */,
+				95709F261D5B6BD700BEE1A5 /* Location.swift in Sources */,
+				95709F291D5B6BD700BEE1A5 /* Notifications.swift in Sources */,
+				95709F281D5B6BD700BEE1A5 /* Meta.swift in Sources */,
+				95709F2C1D5B6BD700BEE1A5 /* Search.swift in Sources */,
+				95709F241D5B6BD700BEE1A5 /* Items.swift in Sources */,
 				9506CA411D5B675B00738119 /* AppDelegate.swift in Sources */,
+				95709F1F1D5B6BD700BEE1A5 /* FormattedAddress.swift in Sources */,
+				95709F1C1D5B6BD700BEE1A5 /* Categories.swift in Sources */,
+				95709F1E1D5B6BD700BEE1A5 /* Delivery.swift in Sources */,
+				95709F201D5B6BD700BEE1A5 /* Groups.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +576,7 @@
 				9506CA671D5B675B00738119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9506CA681D5B675B00738119 /* Build configuration list for PBXNativeTarget "Whitbread-ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +585,7 @@
 				9506CA6A1D5B675B00738119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9506CA6B1D5B675B00738119 /* Build configuration list for PBXNativeTarget "Whitbread-ChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +594,7 @@
 				9506CA6D1D5B675B00738119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
