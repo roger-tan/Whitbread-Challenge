@@ -2,28 +2,25 @@ PODS:
   - Alamofire (3.4.1)
   - Moya (6.5.0):
     - Moya/Core (= 6.5.0)
-  - Moya-SwiftyJSONMapper (1.0.4):
-    - Moya-SwiftyJSONMapper/Core (= 1.0.4)
-  - Moya-SwiftyJSONMapper/Core (1.0.4):
-    - Moya
-    - SwiftyJSON (~> 2.3.2)
   - Moya/Core (6.5.0):
     - Alamofire (~> 3.0)
     - Result (~> 2.0)
   - Result (2.1.3)
+  - SVProgressHUD (2.0.3)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Moya (~> 6.5)
-  - Moya-SwiftyJSONMapper
+  - SVProgressHUD
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
-  Moya-SwiftyJSONMapper: 174dfe333c4c06bae5b941448c443ff92ca4fa0a
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: c94f727bf3262074b43802ccec5273b0cbc098e1
+PODFILE CHECKSUM: 4ccdaf63bfeb78ea9b90d8448b0b0f1037974fff
 
 COCOAPODS: 1.0.1
