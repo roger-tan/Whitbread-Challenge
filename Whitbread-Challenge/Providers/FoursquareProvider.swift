@@ -8,11 +8,12 @@
 
 import Foundation
 import Moya
+import CoreLocation
 
 let FoursquareProvider = MoyaProvider<Foursquare>()
 
 public enum Foursquare {
-    case SearchVenues(query: String)
+    case SearchVenues(query: String, nearLocation: CLLocation)
 }
 
 extension Foursquare: TargetType {
@@ -21,7 +22,7 @@ extension Foursquare: TargetType {
     
     public var path: String {
         switch self {
-        case .SearchVenues(query: _):
+        case .SearchVenues(_, _):
             return "venues/search"
         }
     }
@@ -32,11 +33,11 @@ extension Foursquare: TargetType {
     
     public var parameters: [String: AnyObject]? {
         switch self {
-        case .SearchVenues(query: let query):
+        case .SearchVenues(let query, let nearLocation):
             return [
-                "ll": "40.7,-74",
-                "oauth_token": "Z4FPVB1H5SJUGPOHZHCUO2ONBGMDOOLPDCWAFODQ15QOXTR0",
-                "v": "20160810",
+                "ll": "\(nearLocation.coordinate.latitude), \(nearLocation.coordinate.longitude)",
+                "oauth_token": "Z4FPVB1H5SJUGPOHZHCUO2ONBGMDOOLPDCWAFODQ15QOXTR0", // TODO: Change token to use Info.plist
+                "v": "20160810", // Last version
                 "query": query
             ]
         }
@@ -45,7 +46,7 @@ extension Foursquare: TargetType {
     //TODO: Write the json...
     public var sampleData: NSData {
         switch self {
-        case .SearchVenues(query: _):
+        case .SearchVenues(_, _):
             return "{}".dataUsingEncoding(NSUTF8StringEncoding)!
         }
     }
