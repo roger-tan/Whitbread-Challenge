@@ -38,6 +38,8 @@ extension Foursquare: TargetType {
                 "ll": "\(nearLocation.coordinate.latitude), \(nearLocation.coordinate.longitude)",
                 "oauth_token": "Z4FPVB1H5SJUGPOHZHCUO2ONBGMDOOLPDCWAFODQ15QOXTR0", // TODO: Change token to use Info.plist
                 "v": "20160810", // Last version
+                "intent": "checkin",
+                "radius": 5000,
                 "query": query
             ]
         }
