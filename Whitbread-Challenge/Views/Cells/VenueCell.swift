@@ -10,9 +10,13 @@ import UIKit
 
 class VenueCell: UITableViewCell {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var distanceLabel: UILabel!
+    
     var viewModel: VenueViewModel? {
         didSet {
-            self.textLabel?.text = viewModel?.nameText
+            self.nameLabel.text = viewModel?.nameText
+            self.distanceLabel.text = viewModel?.distanceText
         }
     }
 

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Search for a venue-->
@@ -35,7 +36,31 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cpv-eW-3iK" id="qbB-iH-FTo">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ0-Pp-waq">
+                                                    <rect key="frame" x="535" y="13" width="57" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-zA-LJI">
+                                                    <rect key="frame" x="8" y="11" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hNW-zA-LJI" firstAttribute="leading" secondItem="qbB-iH-FTo" secondAttribute="leadingMargin" id="Q4S-JU-0Vn"/>
+                                                <constraint firstItem="yZ0-Pp-waq" firstAttribute="trailing" secondItem="qbB-iH-FTo" secondAttribute="trailingMargin" id="Qyw-uu-Fpg"/>
+                                                <constraint firstItem="yZ0-Pp-waq" firstAttribute="centerY" secondItem="qbB-iH-FTo" secondAttribute="centerY" id="VcV-TY-EFV"/>
+                                                <constraint firstItem="hNW-zA-LJI" firstAttribute="centerY" secondItem="qbB-iH-FTo" secondAttribute="centerY" id="vxQ-Tl-aXr"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="yZ0-Pp-waq" id="ZK9-dT-xwK"/>
+                                            <outlet property="nameLabel" destination="hNW-zA-LJI" id="uup-PQ-VDa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
