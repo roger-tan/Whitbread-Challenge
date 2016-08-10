@@ -4,7 +4,8 @@
 target 'Whitbread-Challenge' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Alamofire', '~> 3.4'
+  pod 'Moya', '~>6.5'
+  pod "Moya-SwiftyJSONMapper"
 
   # Pods for Whitbread-Challenge
 
