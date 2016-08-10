@@ -19,7 +19,7 @@ public class Groups: NSObject, NSCoding {
 
     // MARK: Properties
 	public var type: String?
-	public var items: []?
+//	public var items: []?
 	public var count: Int?
 	public var name: String?
 
@@ -42,9 +42,9 @@ public class Groups: NSObject, NSCoding {
     public init(json: JSON) {
 		type = json[kGroupsTypeKey].string
 		if let tempValue = json[kGroupsItemsKey].array {
-			items = tempValue
+//			items = tempValue
 		} else {
-			items = nil
+//			items = nil
 		}
 		count = json[kGroupsCountKey].int
 		name = json[kGroupsNameKey].string
@@ -82,7 +82,7 @@ public class Groups: NSObject, NSCoding {
 
     public func encodeWithCoder(aCoder: NSCoder) {
 		aCoder.encodeObject(type, forKey: kGroupsTypeKey)
-		aCoder.encodeObject(items, forKey: kGroupsItemsKey)
+//		aCoder.encodeObject(items, forKey: kGroupsItemsKey)
 		aCoder.encodeObject(count, forKey: kGroupsCountKey)
 		aCoder.encodeObject(name, forKey: kGroupsNameKey)
 

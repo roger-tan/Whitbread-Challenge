@@ -40,7 +40,7 @@ public class Specials: NSObject, NSCoding {
 		items = []
 		if let items = json[kSpecialsItemsKey].array {
 			for item in items {
-				items?.append(Items(json: item))
+//				items?.append(Items(json: item))
 			}
 		} else {
 			items = nil
