@@ -27,6 +27,15 @@ class VenueViewModel {
         }
     }
     
+    var addressText: String {
+        get {
+            if let address = venue.location?.address {
+                return address
+            }
+            return ""
+        }
+    }
+    
     init(venue: Venues) {
         self.venue = venue
     }

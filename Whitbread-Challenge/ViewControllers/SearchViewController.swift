@@ -171,6 +171,24 @@ extension SearchViewController {
     
 }
 
+// MARK: - Navigation
+
+extension SearchViewController {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.destinationViewController {
+        case let detailViewController as VenueDetailViewController:
+            guard let sender = sender as? VenueCell else {
+                break
+            }
+            detailViewController.viewModel = sender.viewModel
+            break
+        default:
+            break
+        }
+    }
+}
+
 // MARK: - UISearchBarDelegate
 
 extension SearchViewController : UISearchBarDelegate {

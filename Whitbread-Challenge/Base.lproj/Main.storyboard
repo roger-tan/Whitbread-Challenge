@@ -3,10 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
-        <!--Search for a venue-->
+        <!--Search for a place-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="Whitbread_Challenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,6 +62,10 @@
                                         <connections>
                                             <outlet property="distanceLabel" destination="yZ0-Pp-waq" id="ZK9-dT-xwK"/>
                                             <outlet property="nameLabel" destination="hNW-zA-LJI" id="uup-PQ-VDa"/>
+                                            <segue destination="YZb-85-Pc2" kind="show" identifier="segueDetailVenue" id="kbl-g1-yOU">
+                                                <segue key="commit" inheritsFrom="parent" id="SJX-Ga-ZOL"/>
+                                                <segue key="preview" inheritsFrom="commit" id="NnZ-g7-v0Y"/>
+                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -76,7 +82,9 @@
                             <constraint firstAttribute="trailing" secondItem="qjH-Ew-PIN" secondAttribute="trailing" id="Wpv-fs-FXw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search for a venue" id="pm0-El-rnU"/>
+                    <navigationItem key="navigationItem" title="Search for a place" id="pm0-El-rnU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="1Q5-gE-IBW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="FL4-QS-dQ9" id="FYN-SI-pbc"/>
                         <outlet property="tableView" destination="qjH-Ew-PIN" id="svb-Vj-JTT"/>
@@ -85,6 +93,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1258" y="1050"/>
+        </scene>
+        <!--Venue Detail View Controller-->
+        <scene sceneID="ltb-0X-TA2">
+            <objects>
+                <viewController id="YZb-85-Pc2" customClass="VenueDetailViewController" customModule="Whitbread_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5LO-g7-b75"/>
+                        <viewControllerLayoutGuide type="bottom" id="Od2-Ls-5Qd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l9v-9r-S45">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p7L-qk-3Bf">
+                                <rect key="frame" x="0.0" y="64" width="600" height="338"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="p7L-qk-3Bf" secondAttribute="height" multiplier="16:9" id="7ca-8m-5mc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FE-B9-Nac">
+                                <rect key="frame" x="20" y="410" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1FE-B9-Nac" firstAttribute="leading" secondItem="l9v-9r-S45" secondAttribute="leadingMargin" id="5Eq-mN-zO3"/>
+                            <constraint firstAttribute="trailing" secondItem="p7L-qk-3Bf" secondAttribute="trailing" id="BwY-e3-jnE"/>
+                            <constraint firstItem="p7L-qk-3Bf" firstAttribute="top" secondItem="5LO-g7-b75" secondAttribute="bottom" id="F6x-H6-EoT"/>
+                            <constraint firstItem="1FE-B9-Nac" firstAttribute="top" secondItem="p7L-qk-3Bf" secondAttribute="bottom" constant="8" id="HhZ-1D-LOu"/>
+                            <constraint firstItem="p7L-qk-3Bf" firstAttribute="leading" secondItem="l9v-9r-S45" secondAttribute="leading" id="jtz-jM-zOj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="1FE-B9-Nac" id="FAp-n2-ddx"/>
+                        <outlet property="imageView" destination="p7L-qk-3Bf" id="FKA-u4-hwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxj-ls-U7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="1041"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lg5-IK-vaH">
@@ -105,4 +156,7 @@
             <point key="canvasLocation" x="422" y="1050"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kbl-g1-yOU"/>
+    </inferredMetricsTieBreakers>
 </document>
