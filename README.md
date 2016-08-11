@@ -1,6 +1,10 @@
 # Whitbread-Challenge
 This is a iOS Test Challenge of Whitbread (https://github.com/whitbread-eos/product-developer-test)
 
+# Demo
+
+![out](https://cloud.githubusercontent.com/assets/3829527/17584131/de145c94-5fac-11e6-88c9-bf3df457da72.gif)
+
 # Requirements
 - A Terminal (Pre-installed on a Mac)
 - XCode 7.3 or more (You can find on Mac App Store)
