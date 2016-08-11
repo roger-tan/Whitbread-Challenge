@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
     private var viewModel: SearchViewModel = SearchViewModel()
     private var isRequesting: Bool = false
     private var locationManager = CLLocationManager()
+    private var previousSearch: String = ""
     
     // MARK: - UIViewController
     
@@ -122,8 +123,8 @@ extension SearchViewController {
             return false
         }
         
-        // Tests the location
-        guard let lastLocation = locationManager.location else {
+        // Test if we have already a previous search
+        guard previousSearch != query && isRequesting == false else {
             return false
         }
         
@@ -140,6 +141,7 @@ extension SearchViewController {
         isRequesting = true
         
         SVProgressHUD.showWithStatus(NSLocalizedString("Searching...", comment: "Status text for searching a venue"));
+        self.previousSearch = query
         viewModel.executeSearch(query, nearLocation: nearLocation) { (venues, error) in
             if error == nil {
                 if venues?.count == 0 {
@@ -215,6 +217,8 @@ extension SearchViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status {
         case .AuthorizedAlways, .AuthorizedWhenInUse:
+            self.locationManager.startUpdatingLocation()
+            self.locationManager.requestLocation()
             if let text = searchBar.text {
                 self.searchForVenues(text)
             }
