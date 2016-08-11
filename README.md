@@ -26,7 +26,15 @@ By executing this command line, Cocoapods will install all dependencies need it 
 
 `$ open Whitbread-Challenge.xcworkspace` 
 
-You are almost ready to run the project. To run the project, please click on **Run button** or use the shortcut **⌘ + R**
+You are almost ready to run the project. If you plan to run on Device, you have nothing to do, but on Simulator, before to execute, please be sure that a location is setup. 
+
+Please verify on Xcode Menu > Debug > Simulate Location > London, England.
+
+![screenshot 2016-08-11 10 08 00](https://cloud.githubusercontent.com/assets/3829527/17583968/d200d60e-5fab-11e6-914f-571e3890016f.png)
+
+To run the project, please click on **Run button** or use the shortcut **⌘ + R**
+![screenshot 2016-08-11 10 11 37](https://cloud.githubusercontent.com/assets/3829527/17584015/053e7d32-5fac-11e6-81fb-b252c5426114.png)
+
 
 # Approach 
 
